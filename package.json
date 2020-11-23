@@ -1,0 +1,22 @@
+{
+  "name": "node-prng",
+  "version": "1.0.0",
+  "main": "lib/prng.js",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "lib",
+    "prng"
+  ],
+  "dependencies": {
+    "bindings": "^1.5.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^7.1.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.0.1"
+  },
+  "description": "NodeJS C bindings for super-fast PRNG",
+  "repository": "git@github.com:keisau/node-prng.git",
+  "author": "Keisau CHING <me@keis.in>"
+}

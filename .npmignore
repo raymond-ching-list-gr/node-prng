@@ -1,0 +1,8 @@
+*
+
+# whitelist
+!lib/**/*
+!package.json
+!yarn.lock
+!src/**/*
+!binding.gyp
