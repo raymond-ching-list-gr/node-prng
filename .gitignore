@@ -1,0 +1,22 @@
+node_modules
+
+.DS_Store
+
+*.log
+**/*.bak.*
+
+# custom tests, don't stage them
+**/*.test.js
+
+# test builds
+build
+
+# npmrc
+.npmrc
+
+# git secret
+.gitsecret/keys/random_seed
+.gitsecret/keys/pubring.kbx~
+!*.secret
+
+.local

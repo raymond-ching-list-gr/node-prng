@@ -1,6 +1,6 @@
 {
   "name": "node-prng",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/prng.js",
   "license": "MIT",
   "private": false,
@@ -17,6 +17,22 @@
     "tape": "^5.0.1"
   },
   "description": "NodeJS C bindings for super-fast PRNG",
-  "repository": "git@github.com:keisau/node-prng.git",
-  "author": "Keisau CHING <me@keis.in>"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/keisau/node-prng.git"
+  },
+  "author": "Keisau CHING <me@keis.in>",
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "test": "npx tape test/**/*.js | npx tap-spec"
+  },
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/keisau/node-prng/issues"
+  },
+  "homepage": "https://github.com/keisau/node-prng#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
 }

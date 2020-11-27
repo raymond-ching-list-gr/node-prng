@@ -2,7 +2,7 @@ const test = require('tape')
 
 const rand = require('../lib/prng')
 
-test('Xorshift32: 32-bit pseudorandom number generator', t => {
+test('xorshift32: 32-bit pseudorandom number generator', t => {
   t.plan(7)
 
   const a = rand.xorshift32().toString('hex')
@@ -19,7 +19,7 @@ test('Xorshift32: 32-bit pseudorandom number generator', t => {
   t.notEqual(a, b, 'both test results should be different')
 })
 
-test('Xorshift64: 64-bit pseudorandom number generator', t => {
+test('xorshift64: 64-bit pseudorandom number generator', t => {
   t.plan(7)
 
   const a = rand.xorshift64().toString('hex')
