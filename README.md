@@ -24,9 +24,14 @@ const prng = require('node-prng')
 
 console.log(prng.xorshift32().toString('hex')) // 32bit random number
 console.log(prng.xorshift64().toString('hex')) // 64bit random number
+
 console.log(prng.xoroshiro128_p().toString('hex')) // 64bit random number, super fast, less "reliable"
 console.log(prng.xoroshiro128_pp().toString('hex')) // 64bit random number, fast
 console.log(prng.xoroshiro128_ss().toString('hex')) // 64bit random number, very fast
+
+console.log(prng.xoshiro256_p().toString('hex')) // 64bit random number, super fast
+console.log(prng.xoshiro256_pp().toString('hex')) // 64bit random number, very fast
+console.log(prng.xoshiro256_ss().toString('hex')) // 64bit random number, very fast
 ```
 
 # Tests
@@ -45,10 +50,9 @@ npm test
 
 There is a list of TODO, including more PRNGs, enhancement of the C library and code optimizations. But you might consider in future, we will have:
 
-1. Support for the xoshiro256 family (xoshiro256+, xoshiro256++, xoshiro256**)
-2. Support for the xoshiro512 family (xoshiro512+, xoshiro512++, xoshiro512**)
-3. Support for the xoroshiro1024 family (xoroshiro1024+, xoroshiro1024++, xoroshiro1024**)
-4. Larger random bytes array generators using the above.
+1. Support for the xoshiro512 family (xoshiro512+, xoshiro512++, xoshiro512**)
+2. Support for the xoroshiro1024 family (xoroshiro1024+, xoroshiro1024++, xoroshiro1024**)
+3. Larger random bytes array generators using the above.
 
 # Credit
 
