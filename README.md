@@ -22,11 +22,11 @@ npm install --save node-prng
 ```js
 const prng = require('node-prng')
 
-console.log(prng.xorshift32().toString('hex')) // 32bit random bytes
-console.log(prng.xorshift64().toString('hex')) // 64bit random bytes
-console.log(prng.xoroshiro128_p().toString('hex')) // 128bit random bytes, super fast, less "reliable"
-console.log(prng.xoroshiro128_pp().toString('hex')) // 128bit random bytes, fast
-console.log(prng.xoroshiro128_ss().toString('hex')) // 128bit random bytes, very fast
+console.log(prng.xorshift32().toString('hex')) // 32bit random number
+console.log(prng.xorshift64().toString('hex')) // 64bit random number
+console.log(prng.xoroshiro128_p().toString('hex')) // 64bit random number, super fast, less "reliable"
+console.log(prng.xoroshiro128_pp().toString('hex')) // 64bit random number, fast
+console.log(prng.xoroshiro128_ss().toString('hex')) // 64bit random number, very fast
 ```
 
 # Tests
